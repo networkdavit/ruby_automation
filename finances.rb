@@ -5,22 +5,22 @@ class Finances
   end
   
   def ask_for_input
-    puts "How many number of lessons do you have worth 330??"
+    print "How many number of lessons do you have worth 330?: "
     cost_330 = gets
 
-    puts "How many number of lessons do you have worth 360??"
+    print "How many number of lessons do you have worth 360?: "
     cost_360 = gets
 
-    puts "How many number of lessons do you have worth 380??"
+    print "How many number of lessons do you have worth 380?: "
     cost_380 = gets
 
-    puts "How many number of lessons do you have worth 400??"
+    print "How many number of lessons do you have worth 400?: "
     cost_400 = gets
 
-    puts "How many number of lessons do you have worth 420??"
+    print "How many number of lessons do you have worth 420?: "
     cost_420 = gets
  
-    puts "How many number of lessons do you have worth 440??"
+    print "How many number of lessons do you have worth 440?: "
     cost_440 = gets
     
 
@@ -37,7 +37,7 @@ class Finances
 
 end
 
-puts "What is the current exchange rate?"
+print "What is the current exchange rate?: "
 exchange_rate = gets
 
 skyeng = Finances.new(exchange_rate.to_i)
