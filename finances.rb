@@ -31,17 +31,17 @@ class Finances
 
   def calculate
     salary = ask_for_input
-    converted = salary * @currency
     print "Should we add this to the current amount earned?: Y/n "
     answer = gets.chomp
     
     if answer == "y"
-      print "How much do you have?"
+      print "How much do you have?: "
       current_earned_amount = gets
-      converted_added = current_earned_amount.to_i + converted
+      converted_added = (salary.to_i + current_earned_amount.to_i) * @currency
       puts "Expected salary is " + converted_added.to_s + " AMD"
     else
-      puts "Expected salary is " + converted.to_s + " AMD"
+      converted_not_added = salary * @currency
+      puts "Expected salary is " + converted_not_added.to_s + " AMD"
     end
 
   end
